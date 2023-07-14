@@ -3,7 +3,7 @@ const express = require("express")
 const app = express();
 
 app.get('/hello', (req, res) => {
-    res.render('<p>I am your big fan</p>');
+    res.send({ message: "hello" })
 });
 
 let PORT = 8081
